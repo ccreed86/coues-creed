@@ -1,0 +1,173 @@
+.quiz-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quiz-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quiz-content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(48, 48, 23, 0.6);
+  padding: 30px;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+  font-size: 3rem;
+  color: #11ee20;
+  margin-bottom: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.quiz-card {
+  margin-bottom: 40px;
+}
+
+.question-text {
+  font-size: 1.8rem;
+  background: #FF3273;
+  background: linear-gradient(to right, #FF3273 26%, #4F5CBE 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 20px;
+}
+
+.option-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.option-item {
+  margin-bottom: 15px;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option-input {
+  margin-right: 10px;
+}
+
+.option-text {
+  font-size: 1.3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #10eefa;
+}
+.option-text:hover {
+  color: #11c0f5;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.previous-button,
+.submit-button {
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  background-color: #0ef512;
+  color: #370a0a;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.previous-button:hover,
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: red;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.quiz-result {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.quiz-result h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.quiz-result p {
+  font-size: 24px;
+  color: #666;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .quiz-content {
+    padding: 20px;
+  }
+
+  .quiz-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .question-text {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .option-text {
+    font-size: 16px;
+  }
+
+  .previous-button,
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .quiz-result h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .quiz-result p {
+    font-size: 20px;
+  }
+}
