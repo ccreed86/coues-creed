@@ -44,7 +44,7 @@ npm install will install the following dependencies;
 
 ## Usage
 
-https://get-wetto.onrender.com/
+https://coues-creed.onrender.com
 
 run npm *** and insert on of the folling, replacing the ***. 
 
@@ -74,7 +74,7 @@ Thanks to Kyle V and Drew H for beign great instructors and providing all of the
 
 ![MIT License](https://img.shields.io/badge/License-MIT-darkgreen)
 
-Copyright (c) 2024 get-wetto
+Copyright (c) 2024 Coues
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -117,7 +117,7 @@ SOFTWARE.
 
 You can contribute via the following GitHub link.
 
-https://github.com/nbruggeman92/get-wetto
+https://github.com/ccreed86/coues-creed
 
 Clone the repo, create a branch and request a pull via push of your contributions. We will review and decide from there.
 
